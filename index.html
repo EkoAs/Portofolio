@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="website icon" type="jpeg" href="./asstets/img/logo.jpeg">
+  <title>Hey! There, Iam Eko</title>
+  <link rel="stylesheet" href="./asstets/style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet" />
+
+
+
+    
+  <!-- BAGIAN GAMBAR PORTOFOLIO ======================================================================================================================= -->
+   <script>
+(function() {
+  const filterBtns = document.querySelectorAll('.filter-item');
+  const items = document.querySelectorAll('.portfolio-item');
+
+  filterBtns.forEach(btn => {
+    btn.onclick = function() {
+     
+      filterBtns.forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+
+      const selectedValue = this.getAttribute('data-filter');
+
+      
+      items.forEach(item => {
+        const itemType = item.getAttribute('data-filter');
+        
+        if (selectedValue === "all" || selectedValue === itemType) {
+         
+          item.style.display = 'block';
+          setTimeout(() => { item.style.opacity = '1'; }, 10);
+        } else {
+          
+          item.style.display = 'none';
+          item.style.opacity = '0';
+        }
+      });
+    };
+  });
+})();
+</script>
+</head>
+
+<body>
+
+  <!-- =================================================SUPER INDUK===========================================================-->
+  <div class="container">
+
+    <!-- navbar khusus hp -->
+    <nav class="nav-mobile">
+      <div class="navbar-brand">
+        <img src="./asstets/img/logo.png" alt="" class="brand-img">
+        <h1 class="brand-name">EKO</h1>
+      </div>
+
+      <ion-icon name="menu-outline" class="menu-toggler"></ion-icon>
+    </nav>
+
+
+    <!-- sidebar structure -->
+    <div class="side-bar">
+
+      <img src="./asstets/images/logo.jpeg" alt="" class="brand-img">
+      <h1 class="brand-name">EKO <br>  ASIF</h1>
+
+      <!-- ==========================================navbar======================================================== -->
+
+      <nav>
+        <ul class="nav">
+          <li><a href="#" class="active">About</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+     
+
+      <div class="social-btn-groups">
+        <a href="#" class="btn">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/eko-asif-050423292?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="#" class="btn">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </div>
+
+      <!-- foooter -->
+      <footer class="side-bar-footer">
+        <p class="copyright">&copy; 2025 By EkoAsif, All rights<br>reserved.</p>
+      </footer>
+
+    </div>
+
+	<!-- about ================================================================================================ -->
+    <section class="about page active">
+
+      
+      <div class="hero">
+        <div class="hero-img-bx">
+          <img src="./asstets/img/logo.jpeg" alt="">
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-content-wrapper">
+            <p class="title">Hello! I am</p>
+            <h1 class="name">Eko Asif Bahri</h1>
+            <div class="desc">
+              <p align="justify" style="text-indent: 20px;">I am an informatics engineering student at wastukancana purwakarta technology high school campus 2025. I have a deep interest in the field of Artificial Intelligence, programming, and logic-based system development. Aiming to become an ML Engineer in the future.
+
+              </p>
+
+              <p align="justify" style="text-indent: 20px;">I am used to self-learning, researching and brainstorming with ai, testing solutions with an analytical approach. For me, technology is not just a tool, but a medium to build efficient and accurate solutions.</p>
+            </div>
+
+            <a href="#" class="btn-primary">Download CV</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- bagian About========================================================================================== -->
+      <div class="about-inner">
+        <div class="service">
+
+          <h2>What I Do</h2>
+
+          <div class="grid-item">
+
+            <div class="item">
+              <div class="item-icon">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+              <div class="item-wrapper">
+                
+                <h3 class="titles">Hard Skills</h3>
+                <p class="paragraft" align="justify">
+                  I develop small to medium-scale projects using HTML, CSS, C++, and Python.
+                  I am also exploring Kotlin and Rust to expand my understanding of modern
+                  programming paradigms and efficient systems.
+                </p>
+                <br>
+
+                <h4 class="titles">Technical Focus</h4>
+                <ul class="listSkill">
+                  <li><p> Building structured logic</p></li>
+                  <li><p> Understanding how algorithms work</p></li>
+                  <li><p> Designing interconnected systems</p></li>
+                  <li><p> Modeling problems computationally</p></li>
+                </ul>
+                <br>
+                <h4 class="titles">Productivity & Documentation Tools</h4>
+                <ul class="listSkill">
+                  <li><p> Microsoft Word</p></li>
+                  <li><p> Microsoft Excel</p></li>
+                  <li><p> LibreOffice Writer</p></li>
+                  <li><p> LibreOffice Calc</p></li>
+                  <li><p> Microsoft PowerPoint</p></li>
+                  <li><p> Canva</p></li>
+                  <li><p> Git & GitHub</p></li>
+            
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-icon">
+                <ion-icon name="easel-outline"></ion-icon>
+              </div>
+              <div class="item-wrapper">
+                <h3 class="titles">Soft Skill</h3>
+                <p align="justify" class="paragraft">Outside of programming, I am used to documenting my learning process in a structured way, as well as analyzing data and experiments using Word, Excel, or LibreOffice.</p><br>
+                <ul class = "listSkill">
+                  <li><p> Analytical and Critical Thinking</p></li>
+                  <li><p> Detail oriented Problem Solving</p></li>
+                  <li><p> Self-Directed Learning & Self-Reflection</p></li>
+                  <li><p> Persistence</p></li>
+                  <li><p> Research & Information Gathering</p></li>
+                  <li><p> AI-Assisted Ideation & Exploration</p></li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-icon">
+                <ion-icon name="file-tray-stacked-outline"></ion-icon>
+              </div>
+              <div class="item-wrapper">
+                <h3>More</h3>
+                <p align="justify" class="paragraft">Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet
+                  ultricies
+                  ex lectus scelerisque nibh. Ut non sodales odio.</p>
+              </div>
+            </div>
+
+            <!-- <div class="item">
+              <div class="item-icon">
+                <ion-icon name="file-tray-stacked-outline"></ion-icon>
+              </div>
+              <div class="item-wrapper">
+                <h3></h3>
+                <p align="justify" class="paragraft">
+                  
+                <h4></h4> 
+                </div>
+            </div> -->
+
+
+          </div>
+
+        </div>
+
+        <!-- testimoni================================================================================================
+        <div class="testimonials">
+
+          <h2>Testimonials</h2>
+
+          <div class="testimonials-row">
+
+            <div class="testimonials-content">
+              <div class="testimonials-text">
+                <blockquote><i>Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit
+                    amet
+                    diam.</i></blockquote>
+              </div>
+              <div class="testimonials-author">
+                <img src="./asstets/img/logo.jpeg" alt="" class="author-img">
+                <div class="author-info">
+                  <h4 class="author-name">Who iaM?</h4>
+                  <p class="author-title">Web Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonials-content">
+              <div class="testimonials-text">
+                <blockquote><i>Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit
+                    amet
+                    diam.</i></blockquote>
+              </div>
+              <div class="testimonials-author">
+                <img src="./asstets/img/logo.jpeg" alt="" class="author-img">
+                <div class="author-info">
+                  <h4 class="author-name">Tugas WEB</h4>
+                  <p class="author-title">Web Developer</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div> -->
+
+
+        <!-- client================================================================================================================ -->
+
+        <div class="clients">
+          <h2 class="titles">Clients</h2>
+
+          <div class="clients-row">
+            <img src="./asstets/images/client-1.png" alt="">
+            <img src="./asstets/images/client-2.png" alt="">
+            <img src="./asstets/images/client-3.png" alt="">
+            <img src="./asstets/images/client-4.png" alt="">
+            <img src="./asstets/images/client-5.png" alt="">
+            <!-- <img src="./asstets/images/client-6.png" alt=""> -->
+            <img src="./asstets/images/A_Micros.png" alt="Microsoft">
+            <img src="./asstets/images/Background.png" alt="VScode">
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+    <!-- resume========================================================================================================== -->
+
+    <section class="resume page">
+
+      <h1 class="section-heading">Resume</h1>
+      <h4 class="section-sub-heading">Fresh Graduate</h4>
+
+
+      <div class="resume-row">
+        <div class="wrapper">
+
+
+          <!-- pendidikan=========================================================== -->
+
+          <div class="edu">
+            <h2>Education</h2>
+
+            <div class="grid-item">
+              <h4 class="year">2025</h4>
+              <h4 class="edu-name">Bachelor of Computer Science</h4>
+              <p class="company">Studies in the university of Wastukancana College of Technology. </p>
+              <p class="edu-desc">
+                I am currently pursuing a Bachelor's degree in Computer Science at Wastukancana College of Technology, with an expected graduation year of 2029. My academic focus is on software development, data analysis, and artificial intelligence, where I am actively engaged in projects and research to deepen my understanding and practical skills in these areas.
+              </p>
+
+              <div class="divider"></div>
+            </div>
+
+            <div class="grid-item">
+              <h4 class="year">2022</h4>
+              <h4 class="edu-name">Senior High School.</h4>
+              <p class="company">Attended senior high school SMAN 2 Purwakarta.</p>
+              <p class="edu-desc">
+                I completed my senior high school education at SMAN 2 Purwakarta in 2025. During my time there, I focused on developing a strong foundation in science and mathematics, which has been instrumental in shaping my interest and skills in computer science and programming.
+              </p>
+
+              <div class="divider"></div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+          <!-- pengalaam========================================================================-================= -->
+
+          <div class="exp">
+            <h2>PROJECT</h2>
+
+            <div class="grid-item">
+              <h4 class="year">2025-2026</h4>
+              <h4 class="exp-name">Math game</h4>
+              <p class="company">Python-Html-Css-JS</p>
+              <p class="exp-desc" style="text-align: justify; text-indent:40px;">A math-based game, using Python's Flask-based engine. Aims to train concentration, accuracy and speed in calculating.
+                <button style="font-size: 12px; padding: 2px 6px; line-height: 1; border: 1px solid #1a161583; border-radius: 4px; cursor: pointer; background-color: #463e3ed7; color: #333;">
+                  <a href="https://github.com/EkoAs/MathGame" target="_blank" style="text-decoration: none; color: #aceee3d7;">GitHub</a>
+                </button>
+                <button style="font-size: 12px; padding: 2px 6px; line-height: 1; border: 1px solid #1a161583; border-radius: 4px; cursor: pointer; background-color: #463e3ed7; color: #333;">
+                  <a href="https://asif47.pythonanywhere.com/" target="_blank" style="text-decoration: none; color: #aceee3d7;">Live View</a>
+                </button>
+
+              </p>
+
+              <div class="divider"></div>
+            </div>
+
+            <div class="grid-item">
+              <h4 class="year">2025</h4>
+              <h4 class="exp-name">Science Calculator & Atm System</h4>
+              <p class="company">Python</p>
+              <p class="exp-desc" style="text-align: justify; text-indent:40px;"">create a science calculator that supports many formulas. including matrix formulas of order 2x2, 3x3, 4x4 and costum. while Automated Teller Machine or ATM to simulate how it works simply.
+                <button style="font-size: 12px; padding: 2px 6px; line-height: 1; border: 1px solid #1a161583; border-radius: 4px; cursor: pointer; background-color: #463e3ed7; color: #333;">
+                  <a href="https://github.com/EkoAs/ScienceCalculator4.0/tree/main" target="_blank" style="text-decoration: none; color: #aceee3d7;">Calculator</a>
+                </button>
+                <button style="font-size: 12px; padding: 2px 6px; line-height: 1; border: 1px solid #1a161583; border-radius: 4px; cursor: pointer; background-color: #463e3ed7; color: #333;">
+                  <a href="#" target="_blank" style="text-decoration: none; color: #aceee3d7;">ATM (can't be accessed)</a>
+                </button>
+              
+              </p>
+
+              <div class="divider"></div>
+            </div>
+
+            <div class="grid-item">
+              <h4 class="year">2025</h4>
+              <h4 class="exp-name">Simple a Game</h4>
+              <p class="company">Python</p>
+              <p class="exp-desc" style="text-align: justify; text-indent:40px;"">
+                create a simple game to learn object control using live keyboard layouts. integrate python in real time using libraries from python.
+                <button style="font-size: 12px; padding: 2px 6px; line-height: 1; border: 1px solid #1a161583; border-radius: 4px; cursor: pointer; background-color: #463e3ed7; color: #333;">
+                  <a href="#" style="text-decoration: none; color: #aceee3d7;">GitHub (can't be accessed)</a>
+                </button>
+              </p>
+
+              <div class="divider"></div>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+
+
+        <div class="wrapper">
+
+          <!-- skille===================================================================================================== -->
+
+
+          <!-- 
+           Building structured logic</p></li>
+                  <li><p> Understanding how algorithms work</p></li>
+                  <li><p> Designing interconnected systems</p></li>
+                  <li><p> Modeling problems computationally
+                     -->
+          <div class="design-skill">
+            <h2>Hard Skills</h2>
+
+            <div class="progress-detail">
+              <div class="progress-name"> Build structure logic</div>
+              <div class="progress-percent">85%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+
+            <div class="progress-detail">
+              <div class="progress-name"> Understanding how algorithms work</div>
+              <div class="progress-percent">85%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+
+            <div class="progress-detail">
+              <div class="progress-name">Crithical thinking and problem solving</div>
+              <div class="progress-percent">80%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+
+            <div class="progress-detail">
+              <div class="progress-name">Designing interconnected systems</div>
+              <div class="progress-percent">90%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+
+          </div>
+
+
+          <!-- coding skill ================================================================ -->
+
+          <div class="coding-skill">
+            <h2>Coding Skills</h2>
+
+            <div class="progress-detail">
+              <div class="progress-name">Python</div>
+              <div class="progress-percent">90%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+
+            <div class="progress-detail">
+              <div class="progress-name">C++ & Rust</div>
+              <div class="progress-percent">70%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+
+            <div class="progress-detail">
+              <div class="progress-name">Html - Css - Js - Kotlin</div>
+              <div class="progress-percent">60%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+
+            <div class="progress-detail">
+              <div class="progress-name">PHP & SQL</div>
+              <div class="progress-percent">50%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%"></div>
+            </div>
+
+            <div class="progress-detail">
+              <div class="progress-name">More</div>
+              <div class="progress-percent">70%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+
+            <!-- <div class="progress-detail">
+              <div class="progress-name">More</div>
+              <div class="progress-percent">70%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div> -->
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <a href="#" class="btn-primary">Download CV</a>
+
+
+    </section>
+
+    <!-- ====================================================================================================== -->
+    
+    
+    
+    
+    <section class="portfolio page">
+      <h1 class="section-heading">Portfolio</h1>
+      <h4 class="section-sub-heading">My Works</h4>
+
+<!-- ===============================MENU UTAMA============================================ -->
+      
+    <ul class="filter-box">
+      <li class="filter-item active" data-filter="all">All</li>
+      <li class="filter-item" data-filter="coding">Coding</li>
+      <li class="filter-item" data-filter="ai">AI</li>
+      <li class="filter-item" data-filter="seminar">Workshops</li>
+      <li class="filter-item" data-filter="more">More</li>
+    </ul>
+
+
+      <div class="portfolio-items-group">
+
+        <div class="portfolio-item" data-filter="more">
+          <img src="./asstets/img/img/014.EKOASIFBAHRI.pdf/014.EKOASIFBAHRI-1.jpg" alt="Mecnesia" class="item-img">
+          <h4 class="item-name">R.N. PWK0524014</h4>
+          <div class="item-icon">
+            <ion-icon name="volume-high"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Successfully completed the <i><b>Pasti Bisa Bahasa Inggris</b></i> intensive English training program organized by <b>MECNESIA</b>. The program focused on mastering <i>verbal and written English communication</i>, equipping me with the ability to interact effectively within global-scale professional environments.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item" data-filter="more">
+          <img src="./asstets/img/img/EkoAsif-GeminiStudent2028.pdf/EkoAsif-GeminiStudent2028-1.jpg" alt="CRUD" class="item-img">
+          <h4 class="item-name">Gemini Student 2026-2028</h4>
+          <div class="item-icon">
+            <ion-icon name="film"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Actively engaged in the <i><b>Gemini Certified Student</b></i> program by <b>Google for Education</b>. This qualification validates my proficiency in <i>Google AI knowledge, skills, and fundamental competencies</i>, specifically designed to enhance effectiveness within modern educational environments.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item" data-filter="coding">
+          <img src="./asstets/img/img/EkoAsif-Kotlin2029(1RXYQDYMQZVM)_5399540_071125171650.pdf/EkoAsif-Kotlin2029(1RXYQDYMQZVM)_5399540_071125171650-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">1RXYQDYMQZVM</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <!-- <div class="item-category">Coding</div> -->
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              This certificate validates my proficiency in <i><b>Kotlin</b></i>, issued by <b>Dicoding Indonesia</b>. The primary focus of this training encompassed programming logic, data structures, and the implementation of modern functional programming features relevant to today's application development industry requirements.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item" data-filter="more">
+          <img src="./asstets/img/img/EkoAsif - SeminarGeminiA2025.pdf/EkoAsif - SeminarGeminiA2025-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">GeminiA Student Ambasador</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <!-- <div class="item-category">Coding</div> -->
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Actively participated in the <i><b>Gemini For Everyone: Bridging The Gap Between Academic Theory and Industrial AI Standards</b></i> seminar, organized by Google Student Ambassador. This session explored the synergy between <i>academic theory and industrial AI standards</i>, while deepening my understanding of intelligent technology implementation strategies within professional environments.
+            </span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-filter="seminar">
+          <img src="./asstets/img/img/EkoAsif-SeminarGeminiByhimpunan.pdf/EkoAsif-SeminarGeminiByhimpunan-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">Seminar Gemini Student</h4>
+          <div class="item-icon">
+            <ion-icon name="film"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Actively participated in the <i><b>Gemini for everyone</i></b> workshop, which discussed the latest trends in <i>academic theory and industry-standard AI</i>. This experience broadened my insights into best practices and collaboration strategies within technical teams.
+            </span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-filter="ai">
+          <img src="./asstets/img/img/EkoAsif-AI Powered AB Testing.pdf/EkoAsif-AI Powered AB Testing-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">AI Powered AB Testing</h4>
+          <div class="item-icon">
+            <ion-icon name="image"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Successfully completed the <i><b>AI-Powered A/B Testing</b></i> intensive course, focusing on the integration of artificial intelligence in product optimization. Throughout the program, I mastered <i>data-driven experimental methodologies</i> and the use of AI for <i>precise statistical analysis</i> to enhance decision-making effectiveness in feature development.
+            </span>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-filter="ai">
+          <img src="./asstets/img/img/EkoAsif-Brainstrom with AI.pdf/EkoAsif-Brainstrom with AI-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">Brainstrom with AI</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Successfully completed the <i><b>Brainstorm with AI</b></i> intensive course, focusing on leveraging artificial intelligence to expand creative thinking horizons. Throughout the program, I mastered <i>AI-assisted ideation techniques</i> and <i>collaborative problem-solving methodologies</i> to generate innovative solutions relevant to current industry challenges.
+            </span>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-filter="ai">
+          <img src="./asstets/img/img/EkoAsif-Project Planing with AI.pdf/EkoAsif-Project Planing with AI-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">Project Planning with AI</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div> 
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Successfully completed the <i><b>Project Planning with AI</b></i> intensive course, demonstrating a profound understanding of <i>AI-driven project management</i> and <i>efficient planning strategies</i>. Throughout the program, I mastered techniques for integrating AI tools to optimize scheduling, resource allocation, and risk mitigation within technical projects.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item" data-filter="coding">
+          <img src="./asstets/img/img/EkoAsif-Python Developer.pdf/EkoAsif-Python Developer-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">Python Developer</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              This certificate confirms my expertise as a <i><b>Python Developer</b></i> through Sololearn's comprehensive curriculum. The program covered essential software development concepts, from efficient programming logic to the implementation of technical solutions relevant to the digital industry's needs.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item" data-filter="coding">
+          <img src="./asstets/img/img/EkoAsif-Python Intermedia.pdf/EkoAsif-Python Intermedia-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">Python Intermedia</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              This certificate validates my proficiency in <i><b>Python Intermediate</b></i>, issued by <b>Sololearn</b>. The training centered on honing advanced programming logic, optimizing data structures, and executing real-world projects that align with current technical standards in the industry.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item " data-filter="ai">
+          <img src="./asstets/img/img/EkoAsif-Research with AI.pdf/EkoAsif-Research with AI-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">Research with AI</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Completed the <i><b>Research with AI</b></i> specialization course, focusing on the integration of artificial intelligence into modern research methodologies. Through this program, I mastered <i>AI-driven data collection techniques</i> and <i>precise information analysis</i> to support data-backed decision-making in professional settings.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item " data-filter="ai">
+          <img src="./asstets/img/img/EkoAsif-Think Creatively with AI.pdf/EkoAsif-Think Creatively with AI-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">Think Creatively with AI</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2025</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Successfully completed the <i><b>Think Creatively with AI</b></i> intensive course, demonstrating a profound understanding of <i>generative AI theory</i> and its <i>practical application in creative problem-solving</i>. Throughout the program, I explored methodologies for leveraging AI tools to optimize innovative workflows.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item " data-filter="seminar">
+          <img src="./asstets/img/img/EkoAsif-Seminar Nasional Public Speaking.pdf/EkoAsif-Seminar Nasional Public Speaking-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">Seminar Nasional Public Speaking</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2024</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Actively engaged in the <i><b>Delivery Mastery</b></i> workshop, exploring the latest trends in <i>rhetorical theory and industry-standard presentation techniques</i>. This experience sharpened my ability to convey complex ideas and enhanced my collaboration strategies within professional environments.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item " data-filter="coding">
+          <img src="./asstets/img/img/EkoAsif_HTML.pdf/EkoAsif_HTML-1.jpg" alt="" class="item-img">
+          <h4 class="item-name">HTML Basic</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2024</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              This certificate validates my proficiency in <i><b>HTML</b></i>, issued by <b>Programming Hub</b>. The primary focus of this training encompassed programming logic, data structures, and the implementation of real-world projects relevant to today's technology industry requirements.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item " data-filter="more">
+          <img src="./asstets/img/img/EkoAsif-Sertifikat Peserta SohIB Bercerita .pdf/EkoAsif-Sertifikat Peserta SohIB Bercerita -1.jpg" alt="" class="item-img">
+          <h4 class="item-name">SohIB Bercerita</h4>
+          <div class="item-icon">
+            <ion-icon name="videocam"></ion-icon>
+          </div>
+          <div class="item-description-container" style="text-align: justify; margin-top: 10px; font-size: var(--font-size-12); color: #e4d1d1; width: 100%; padding: 10px; background-color: #1a161583; border-radius: 4px; line-height: 1.6;">
+          <span class="item-category">2024</span>
+            <span style="text-indent: 80px; display: inline-block; margin-top: -30px;">
+              Actively engaged in the <i><b>SohIB Bercerita: Cerita Kawan Difabel</b></i> talkshow, exploring the latest trends in <i>social inclusivity and empathetic communication</i>. This experience provided fresh perspectives on implementing best practices and effective collaboration strategies within professional team environments.
+            </span>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </section>
+
+    <!-- =============================================================================================================================================== -->
+    <!-- blog =============================================================================================================== -->
+    
+    <section class="blog page">
+      <h1 class="section-heading">Blog</h1>
+      <h4 class="section-sub-heading">My Diary</h4>
+
+      <div class="blog-container">
+
+        <div class="blog-post">
+          <div class="blog-img-box">
+            <img src="./asstets/images/project5.jpg" alt="Crumb Circuit Design and Simulation">
+          </div>
+          <div class="blog-category">Circuit Design</div>
+          <div class="blog-info">
+            <p class="publish-date">28 Dec 2025</p>
+            <a href="#" class="blog-title">Simulates mathematical logic in the form of a live circuit, using several gates, such as <i>AND</i> and <i>OR</i> gates.</a>
+          </div>
+        </div>
+
+        <div class="blog-post">
+          <div class="blog-img-box">
+            <img src="./asstets/images/project3.jpg" alt="Blender Design">
+          </div>
+          <div class="blog-category">Design 3D</div>
+          <div class="blog-info">
+            <p class="publish-date">06 January 2025</p>
+            <a href="#" class="blog-title">DCreate a simple replica using the Blender Kit, with the elements provided we can arrange them according to the size, place, position we want.</a>
+          </div>
+        </div>
+
+        <div class="blog-post">
+          <div class="blog-img-box">
+            <img src="./asstets/images/project1.jpg" alt="Simulate Yolo Object Detection">
+          </div>
+          <div class="blog-category">Simulation</div>
+          <div class="blog-info">
+            <p class="publish-date">23 Agt 2025</p>
+            <a href="#" class="blog-title">Simulate object detection based on <i>Yolo</i> from the Python library. Aim to implement in the future if needed.</a>
+          </div>
+        </div>
+
+
+        <div class="blog-post">
+          <div class="blog-img-box">
+            <img src="./asstets/images/S4GIuXmDv5.jpg" alt="">
+          </div>
+          <div class="blog-category">Design & Simulation</div>
+          <div class="blog-info">
+            <p class="publish-date">February 2026</p>
+            <b href="#" class="blog-title">play a node simulation game using Stea's <b></b><i>Upload Labs</i></b> software to learn how nodes work and their structure.</a>
+          </div>
+        </div>
+
+
+        <div class="blog-post">
+          <div class="blog-img-box">
+            <img src="./asstets/images/blog.jpg" alt="">
+          </div>
+          <div class="blog-category">Design</div>
+          <div class="blog-info">
+            <p class="publish-date">06 Apr 2021</p>
+            <a href="#" class="blog-title">Why I Switched to Sketch For UI Design</a>
+          </div>
+        </div>
+        
+
+
+
+        <div class="blog-post">
+          <div class="blog-img-box">
+            <img src="./asstets/images/blog.jpg" alt="">
+          </div>
+          <div class="blog-category">UI</div>
+          <div class="blog-info">
+            <p class="publish-date">06 Apr 2021</p>
+            <a href="#" class="blog-title">Creative and Innovative Navigation Designs</a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- kontak======================================================================================================================= -->
+    <section class="contact page">
+
+      <h1 class="section-heading">Contact</h1>
+      <h4 class="section-sub-heading">Get in Touch</h4>
+
+      <div class="contact-info">
+        
+        <div class="info-box">
+          <ion-icon name="call-outline"></ion-icon>
+          <p>0058-7119-9718</p>
+        </div>
+
+        <div class="info-box">
+          <ion-icon name="location-outline"></ion-icon>
+          <p>Purwakarta</p>
+        </div>
+
+        <div class="info-box">
+          <ion-icon name="mail-outline"></ion-icon>
+          <p>eko.asif47@gmail.com</p>
+        </div>
+
+        <div class="info-box">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <p>Hire Available</p>
+        </div>
+
+      </div>
+
+
+      <!-- <div class="contact-form">
+
+        <form action="https://formspree.io/f/mzdaqwen" method="POST"  enctype="multipart/form-data">
+
+          <div class="form-grid">
+            <div class="grid-left">
+              <input type="text" required placeholder="Full Name">
+              <input type="email" required placeholder="Email Address">
+              <input type="text" required placeholder="Subject">
+            </div>
+
+            <div class="grid-right">
+              <textarea placeholder="Message"></textarea>
+            </div>
+          </div>
+
+          <a href="#" class="btn-primary">Send message</a>
+          <button class="btn-primary" type="submit">Send message</button>
+
+        </form> -->
+
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mzdaqwen" method="POST">
+
+            <div class="form-grid">
+              <div class="grid-left">
+                <input type="text" name="name" required placeholder="Full Name">
+                <input type="email" name="email" required placeholder="Email Address">
+                <input type="text" name="subject" required placeholder="Subject">
+              </div>
+
+              <div class="grid-right">
+                <textarea name="message" required placeholder="Message"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="border: none; cursor: pointer; font-family: inherit;">
+              Send message
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+
+  
+  <script src="./asstets/script.js"></script>
+
+  <!-- ionicon CDN -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+</body>
+
+</html>
