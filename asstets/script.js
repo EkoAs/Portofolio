@@ -22,6 +22,9 @@ for (let i = 0; i < navItemLinks.length; i++) {
     // collected nav links innertext
     const itemLinkText = this.textContent.toLowerCase();
 
+    // agar menu ketutup sendiri setelah kelik salah satu
+    sideBar.classList.remove('active');
+
     // defined page and add active class 
     for (let i = 0; i < pages.length; i++) {
 

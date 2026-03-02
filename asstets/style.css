@@ -144,7 +144,11 @@ img {
 }
 
 /* ==================================================================================== */
-
+.menu-toggler {
+    cursor: pointer;
+    position: relative;
+    z-index: 999; /* Pastikan tombol ada di lapisan paling atas */
+}
 .container {
   position: relative;
   max-width: 1440px;
