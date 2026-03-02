@@ -2,6 +2,11 @@
 const menuToggler = document.querySelector('.menu-toggler');
 const sideBar = document.querySelector('.side-bar');
 
+// Aktifkan ini kembali di script.js
+menuToggler.addEventListener('click', function(){
+  sideBar.classList.toggle('active');
+});
+
 // page navigation functionality
 for (let i = 0; i < navItemLinks.length; i++) {
   // added onclick event in nav links
