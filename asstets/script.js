@@ -1,11 +1,18 @@
 // sidebar toggle variables
 const menuToggler = document.querySelector('.menu-toggler');
 const sideBar = document.querySelector('.side-bar');
-
+const navItemLinks = document.querySelectorAll('.nav li a'); // Tambahkan ini
+const pages = document.querySelectorAll('.page');
 // Aktifkan ini kembali di script.js
+// menuToggler.addEventListener('click', function(){
+//   sideBar.classList.toggle('active');
+// });
+
+//toggling sidebar in mobile
 menuToggler.addEventListener('click', function(){
   sideBar.classList.toggle('active');
 });
+
 
 // page navigation functionality
 for (let i = 0; i < navItemLinks.length; i++) {
